@@ -1,0 +1,18 @@
+{
+  "name": "AhorroInteligente",
+  "short_name": "Ahorro",
+  "description": "Organizá metas, ingresos, gastos y aportes para lograr tus objetivos de ahorro.",
+  "start_url": "/",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f4f8f1",
+  "theme_color": "#10201b",
+  "icons": [
+    {
+      "src": "assets/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
