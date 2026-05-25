@@ -1,4 +1,4 @@
-const CACHE_NAME = "ahorrointeligente-v5";
+const CACHE_NAME = "ahorrointeligente-v6";
 const APP_SHELL = [
   "./",
   "./index.html",
