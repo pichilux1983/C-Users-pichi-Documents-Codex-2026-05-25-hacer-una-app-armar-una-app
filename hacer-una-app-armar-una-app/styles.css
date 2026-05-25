@@ -108,12 +108,12 @@ label {
 
 .brand-panel h1 {
   margin: 0;
-  max-width: 720px;
+  max-width: none;
   font-family: Sora, Manrope, sans-serif;
-  font-size: clamp(2.6rem, 5.4vw, 5.2rem);
+  font-size: 4.35rem;
   line-height: 0.98;
   letter-spacing: 0;
-  overflow-wrap: anywhere;
+  white-space: nowrap;
   text-shadow: 0 12px 28px rgba(0, 0, 0, 0.24);
 }
 
@@ -151,11 +151,12 @@ label {
 }
 
 .hero-stats {
-  position: absolute;
-  right: 28px;
-  bottom: 28px;
+  position: relative;
   display: grid;
   gap: 3px;
+  width: max-content;
+  max-width: 100%;
+  margin-top: 18px;
   border: 1px solid rgba(255, 255, 255, 0.24);
   border-radius: 14px;
   background: rgba(255, 255, 255, 0.16);
@@ -1168,6 +1169,10 @@ details.panel summary small {
   .month-picker {
     width: 100%;
   }
+
+  .brand-panel h1 {
+    font-size: 3.2rem;
+  }
 }
 
 @media (max-width: 560px) {
@@ -1181,6 +1186,10 @@ details.panel summary small {
     padding: 26px;
   }
 
+  .brand-panel h1 {
+    font-size: 2.25rem;
+  }
+
   .pig-hero {
     right: 4%;
     bottom: 4%;
@@ -1192,5 +1201,27 @@ details.panel summary small {
   .goal-numbers,
   .contribution-row {
     grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 440px) {
+  .brand-panel h1 {
+    font-size: 1.9rem;
+  }
+}
+
+@media (max-width: 380px) {
+  .brand-panel {
+    padding: 22px;
+  }
+
+  .brand-panel h1 {
+    font-size: 1.58rem;
+  }
+}
+
+@media (max-width: 340px) {
+  .brand-panel h1 {
+    font-size: 1.34rem;
   }
 }
